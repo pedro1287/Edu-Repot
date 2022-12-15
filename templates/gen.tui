@@ -1,0 +1,18 @@
+﻿##ui_template es un mini lenguaje de interface de texto para telegram
+
+@section generating
+@define markdown
+⏳Generando Url🔗...
+```
+esto puede tardar minuto(s), espere...
+```
+@endsection
+
+@section generated
+@define html
+✅ Generado ✅
+@endsection
+
+@markup
+@button text='🔗  Url  🔗' url='@>>gen_url'
+@endmarkup

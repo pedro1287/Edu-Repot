@@ -1,0 +1,31 @@
+﻿##ui_template es un mini lenguaje de interface de texto para telegram
+
+@section __base
+@define html
+@for inf in infos
+📄 @>>inf.fname
+📒 @>>inf.fsize
+@endfor
+@endsection
+
+@section result
+@define html
+✅ Resultado 👆
+@endsection
+
+@section prepare_resp
+@define html
+🗒 Terminando ...
+@endsection
+
+@section no_result
+@define html
+⁉️ No Hay Resultado ⁉️
+@endsection
+
+@markup
+@button text='⬆️  Repotematico  ⤴️' callback='/up_repo_@>>resp_id'
+@button text='⬆️  EducaUHO  ⤴️' callback='/up_educa_@>>resp_id'
+@jmplist
+@button text='🔗  Link  🔗' callback='/up_link_@>>resp_id'
+@endmarkup
