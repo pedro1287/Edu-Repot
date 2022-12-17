@@ -44,8 +44,10 @@ def create_session(proxy:ProxyCloud=None,username='obysoft',password='Obysoft200
     HOST = 'https://repotematico.uo.edu.cu/'
     HEADERS = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0'}
     proxies = None
+    print(proxies)
     if proxy:
         proxies = proxy.as_dict_proxy()
+        print(proxies)
     session = requests.Session()
     user = username+createID()
     mail = f'{user}@gmail.com'
