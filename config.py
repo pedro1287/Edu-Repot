@@ -8,15 +8,15 @@ TG_ADMIN = 'Stvz20'
 
 
 # Database
-DB_LOCAL = False
+DB_LOCAL = True
 DB_HOST = 'db4free.net'
-DB_HOST_USERNAME = ''
-DB_HOST_PASSWORD = ''
+DB_HOST_USERNAME = 'stvz20'
+DB_HOST_PASSWORD = 'St'
 DB_NAME = 'stvz02'
 
 if DB_LOCAL:
     # Database Local
-    DB_HOST = ''
-    DB_HOST_USERNAME = ''
-    DB_HOST_PASSWORD = ''
+    DB_HOST = 'https://github.com/luisaes021/Edu-Repot'
+    DB_HOST_USERNAME = 'Stvz20'
+    DB_HOST_PASSWORD = 'Stvz20'
     DB_NAME = 'clutilprodb'
